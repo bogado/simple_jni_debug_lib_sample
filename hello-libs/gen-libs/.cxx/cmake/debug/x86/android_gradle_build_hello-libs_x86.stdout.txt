@@ -1,0 +1,10 @@
+ninja: Entering directory `/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/.cxx/cmake/debug/x86'
+[1/2] Building CXX object CMakeFiles/hello-libs.dir/hello-libs.cpp.o
+/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/src/main/cpp/hello-libs.cpp:36:40: warning: format specifies type 'unsigned long long' but the argument has type 'int' [-Wformat]
+    LOGI("calculation time: %" PRIu64, 0);
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/src/main/cpp/hello-libs.cpp:23:64: note: expanded from macro 'LOGI'
+  ((void)__android_log_print(ANDROID_LOG_INFO, "hello-libs::", __VA_ARGS__))
+                                                               ^~~~~~~~~~~
+1 warning generated.
+[2/2] Linking CXX shared library /Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/build/intermediates/cmake/debug/obj/x86/libhello-libs.so

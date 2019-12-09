@@ -1,0 +1,19 @@
+Executable : /Users/vbogado/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/src/main/cpp
+-B/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/.cxx/cmake/release/arm64-v8a
+-DANDROID_ABI=arm64-v8a
+-DANDROID_PLATFORM=android-18
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/build/intermediates/cmake/release/obj/arm64-v8a
+-DCMAKE_BUILD_TYPE=Release
+-DANDROID_NDK=/Users/vbogado/Library/Android/sdk/ndk/20.1.5948944
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
+-DCMAKE_SYSTEM_VERSION=18
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_ANDROID_NDK=/Users/vbogado/Library/Android/sdk/ndk/20.1.5948944
+-DCMAKE_TOOLCHAIN_FILE=/Users/vbogado/Library/Android/sdk/ndk/20.1.5948944/build/cmake/android.toolchain.cmake
+-G Ninja
+-DCMAKE_MAKE_PROGRAM=/Users/vbogado/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+jvmArgs : 
+

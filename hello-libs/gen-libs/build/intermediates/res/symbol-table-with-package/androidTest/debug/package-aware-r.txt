@@ -1,0 +1,2 @@
+com.example.buildlibs.test
+string app_name

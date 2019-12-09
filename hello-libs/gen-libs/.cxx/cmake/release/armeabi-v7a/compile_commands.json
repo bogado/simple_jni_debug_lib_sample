@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/.cxx/cmake/release/armeabi-v7a",
+  "command": "/Users/vbogado/Library/Android/sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi18 --gcc-toolchain=/Users/vbogado/Library/Android/sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/vbogado/Library/Android/sdk/ndk/20.1.5948944/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Dhello_libs_EXPORTS -I/gmath/include -I/gperf/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -std=gnu++17 -Oz -DNDEBUG  -fPIC   -o CMakeFiles/hello-libs.dir/hello-libs.cpp.o -c /Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/src/main/cpp/hello-libs.cpp",
+  "file": "/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/src/main/cpp/hello-libs.cpp"
+}
+]

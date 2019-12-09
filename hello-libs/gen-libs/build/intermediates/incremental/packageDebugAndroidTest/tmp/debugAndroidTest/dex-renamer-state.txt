@@ -1,0 +1,4 @@
+#Mon Dec 09 12:05:24 PST 2019
+base.0=/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/build/intermediates/dex/debugAndroidTest/mergeDexDebugAndroidTest/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

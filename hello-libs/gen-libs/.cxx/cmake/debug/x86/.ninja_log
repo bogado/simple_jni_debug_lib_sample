@@ -1,0 +1,3 @@
+# ninja log v5
+0	719	1575921923	CMakeFiles/hello-libs.dir/hello-libs.cpp.o	f51d9539d80379cd
+720	990	1575921923	/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/build/intermediates/cmake/debug/obj/x86/libhello-libs.so	980bf83e3b7f5207

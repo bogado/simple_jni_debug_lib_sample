@@ -1,0 +1,3 @@
+/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/vbogado/Workspaces/simple_jni_debug_lib_sample/hello-libs/gen-libs/.cxx/cmake/debug/arm64-v8a/CMakeFiles/hello-libs.dir
