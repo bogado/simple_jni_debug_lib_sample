@@ -7,30 +7,30 @@ This is an attmept to reproduce the issue I found on a much more complex library
 
 ### Current state
 
-    * The project is an Android Library.
-    * There are some instrumented android tests.
-    * Tests run ok on their on.
+* The project is an Android Library.
+* There are some instrumented android tests.
+* Tests run ok on their on.
 
 ### When I…
 
 Attempt to debug the failed test with the latest stable android studio (3.5.3):
 
-    * Android studio fails to start the native debugger.
-    * Debugging java only works as expected.
-    * Dual debugging also fails, including to hit java break points that work fine when run with the java-only debgger configuration.
+* Android studio fails to start the native debugger.
+* Debugging java only works as expected.
+* Dual debugging also fails, including to hit java break points that work fine when run with the java-only debgger configuration.
 
 #### Findings :
 
 Investigating this issue, using the dual debugger configuration, I found the following :
 
-    * The tests actully run, but no debuuger is able to connect to them.
-        You can see the output of the tests on the console tab of the native debugger.
-    * LLDB runnig on the host machine cannot start, and consequently cannot connect, the lldb server on the device.
+* The tests actully run, but no debuuger is able to connect to them.
+    You can see the output of the tests on the console tab of the native debugger.
+* LLDB runnig on the host machine cannot start, and consequently cannot connect, the lldb server on the device.
 
 Android studio will attempt to start the debbuger in two different fashions : 
 
-    1. When the device is rooted, some older emulators after `abd root` is exectured, it run some scripts that install and run the server.
-    2. With a non-rooted device it will run more or less the same things using the instrumentation.
+1. When the device is rooted, some older emulators after `abd root` is exectured, it run some scripts that install and run the server.
+2. With a non-rooted device it will run more or less the same things using the instrumentation.
 
 In both cases the code will attempt to create a directory under the main application directory and install the lldb-server executable on that directory.
 
