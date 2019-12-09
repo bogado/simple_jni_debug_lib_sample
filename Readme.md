@@ -1,24 +1,25 @@
-== Debugging does not work for instrumented tests:
+## Debugging does not work for instrumented tests: 
 
 The android library in the directory `hello-libs` is a small test library with a native component and a single instrumented test, that fails.
 
-This is an attmept to reproduce the issue I found on a much more complex library project that I'm working on with the simplest possible code. It is ruthly based in one the examples provided on the [ndk sample `hello-libs](https://github.com/android/ndk-samples/tree/master/hello-libs). Much of the original code was removed and a single android test was added. In particular, and importantly, there's no application within this project.
+This is an attmept to reproduce the issue I found on a much more complex library project that I'm working on with the simplest possible code. It is ruthly based in one the examples provided on the [ndk sample `hello-libs`](https://github.com/android/ndk-samples/tree/master/hello-libs). Much of the original code was removed and a single android test was added. In particular, and importantly, there's no application within this project.
 
 
-=== Current state
+### Current state
 
-    - The project is an Android Library.
-    - There are some instrumented android tests.
-    - Tests run ok on their on.
+    * The project is an Android Library.
+    * There are some instrumented android tests.
+    * Tests run ok on their on.
 
-=== When I…
+### When I…
 
-Attempt to debug the failed test with the latest stable android studio (3.5.3): 
-    - Android studio fails to start the native debugger.
-    - Debugging java only works as expected.
-    - Dual debugging also fails, including to hit java break points that work fine when run with the java-only debgger configuration.
+Attempt to debug the failed test with the latest stable android studio (3.5.3):
 
-==== Findings :
+    * Android studio fails to start the native debugger.
+    * Debugging java only works as expected.
+    * Dual debugging also fails, including to hit java break points that work fine when run with the java-only debgger configuration.
+
+#### Findings :
 
 Investigating this issue, using the dual debugger configuration, I found the following :
 
@@ -37,7 +38,7 @@ Since this exmample don't have an actual application the euristics used to find 
 
 When using a rooted device creating the directory on the correct place and making sure that all the correct persmissions are set makes the application debuggable again. Unfortunatly the latest emulators don't seem to be rooted anymore. 
 
-=== Evidence :
+### Evidences :
 
 The following idea.log extracts were collected after attempting to debug on the second case as I don't have a working rooted emulator.
 
